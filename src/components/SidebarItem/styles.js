@@ -18,4 +18,15 @@ export const Container = styled.div`
   &:hover {
     background-color: black;
   }
+ 
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 `;
+
+
+
