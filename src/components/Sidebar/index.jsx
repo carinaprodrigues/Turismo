@@ -2,15 +2,23 @@ import React from 'react';
 import { Container, Content } from './styles';
 import { 
   FaTimes, 
-  FaHome,
-  FaEnvelope, 
-  FaRegSun, 
-  FaUserAlt, 
-  FaIdCardAlt, 
-  FaRegFileAlt,
-  FaRegCalendarAlt,
-  FaChartBar
+  //FaHome,
+  //FaEnvelope, 
+  //FaRegSun, 
+  //FaUserAlt, 
+  //FaIdCardAlt, 
+  //FaRegFileAlt,
+  //FaRegCalendarAlt,
+  //FaChartBar
 } from 'react-icons/fa';
+import { MdMuseum } from "react-icons/md";
+import { PiBinocularsFill } from "react-icons/pi";
+import { IoRestaurant } from "react-icons/io5";
+import { FaHotel } from "react-icons/fa";
+import { MdOutlineSportsGymnastics } from "react-icons/md";
+import { FaRegHospital } from "react-icons/fa";
+import { IoSchool } from "react-icons/io5";
+import { AiFillMedicineBox } from "react-icons/ai";
 import SidebarItem from '../SidebarItem';
 import { Link } from 'react-router-dom';
 
@@ -24,28 +32,28 @@ const Sidebar = ({ active }) => {
       <FaTimes onClick={closeSidebar} />
       <Content>
         <Link to="/" onClick={closeSidebar}>
-          <SidebarItem Icon={FaHome} Text="História e Cultura" />
+          <SidebarItem Icon={MdMuseum} Text="História e Cultura" />
         </Link>
         <Link to="/atracoes" onClick={closeSidebar}>
-          <SidebarItem Icon={FaChartBar} Text="Atrações Turísticas" />
+          <SidebarItem Icon={PiBinocularsFill} Text="Atrações Turísticas" />
         </Link>
         <Link to="/gastronomia" onClick={closeSidebar}>
-          <SidebarItem Icon={FaUserAlt} Text="Gastronomia" />
+          <SidebarItem Icon={IoRestaurant} Text="Gastronomia" />
         </Link>
         <Link to="/hospedagem" onClick={closeSidebar}>
-          <SidebarItem Icon={FaEnvelope} Text="Hospedagem" />
+          <SidebarItem Icon={FaHotel} Text="Hospedagem" />
         </Link>
         <Link to="/saude" onClick={closeSidebar}>
-          <SidebarItem Icon={FaRegCalendarAlt} Text="Saúde e Bem-Estar" />
+          <SidebarItem Icon={MdOutlineSportsGymnastics} Text="Saúde e Bem-Estar" />
         </Link>
         <Link to="/hospitais" onClick={closeSidebar}>
-          <SidebarItem Icon={FaIdCardAlt} Text="Hospitais e Clínicas" />
+          <SidebarItem Icon={FaRegHospital} Text="Hospitais e Clínicas" />
         </Link>
         <Link to="/escolas" onClick={closeSidebar}>
-          <SidebarItem Icon={FaRegFileAlt} Text="Escolas e Faculdades" />
+          <SidebarItem Icon={IoSchool} Text="Escolas e Faculdades" />
         </Link>
         <Link to="/servicos" onClick={closeSidebar}>
-          <SidebarItem Icon={FaRegSun} Text="Serviços Essenciais" />
+          <SidebarItem Icon={AiFillMedicineBox} Text="Serviços Essenciais" />
         </Link>
       </Content>
     </Container>

@@ -14,8 +14,9 @@ import Servicos from './pages/servicos';
 
 function App() {
   return (
-      <Router>
-        <Header />
+    <Router>
+      <Header />
+      <main>
         <Routes>
           <Route path="/" element={<Historia />} />
           <Route path="/atracoes" element={<Atracoes />} />
@@ -26,8 +27,9 @@ function App() {
           <Route path="/escolas" element={<Escolas />} />
           <Route path="/servicos" element={<Servicos />} />
         </Routes>
-      </Router> 
-
+      </main>
+      <Footer />
+    </Router>
   );
 }
 

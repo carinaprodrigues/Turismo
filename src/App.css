@@ -4,8 +4,30 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #1A202C;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+}
+
+footer {
+  background-color: #1A202C;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
