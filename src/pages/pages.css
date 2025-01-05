@@ -1,0 +1,66 @@
+.page-container {
+    padding: 20px;
+    margin: 80px auto 10px; /* Margem superior para não sobrepor o header */
+    max-width: 1200px; /* Centraliza e limita a largura */
+    background-color: #ffffff; /* Cor de fundo clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Sombra leve */
+  }
+  
+  h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #1A202C; /* Cor principal */
+    margin-bottom: 50px;
+    text-align: center; /* Centraliza o título */
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #1A202C; /* Cor principal */
+    margin-bottom: 16px;
+    text-align: center; /* Centraliza o título */
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 768px) {
+    .page-container {
+      margin: 60px 10px 20px; /* Ajusta margens em dispositivos menores */
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Estilo da lista */
+ul {
+  list-style-type: disc; /* Definindo bolinhas como marcadores */
+  padding-left: 40px; /* Aumentando o espaço à esquerda das bolinhas */
+  text-align: justify; /* Justificando o texto */
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Estilo para cada item da lista */
+li {
+  text-align: justify; /* Garantindo que o texto dentro dos itens seja justificado */
+  margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+li strong {
+  font-weight: bold; /* Deixando o texto em negrito */
+}

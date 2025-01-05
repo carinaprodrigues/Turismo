@@ -1,16 +1,6 @@
 import React from 'react';
 import { Container, Content } from './styles';
-import { 
-  FaTimes, 
-  //FaHome,
-  //FaEnvelope, 
-  //FaRegSun, 
-  //FaUserAlt, 
-  //FaIdCardAlt, 
-  //FaRegFileAlt,
-  //FaRegCalendarAlt,
-  //FaChartBar
-} from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import { MdMuseum } from "react-icons/md";
 import { PiBinocularsFill } from "react-icons/pi";
 import { IoRestaurant } from "react-icons/io5";
