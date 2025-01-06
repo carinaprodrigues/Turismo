@@ -8,7 +8,7 @@ const Hospitais = () => {
       <h1>História e Origem</h1>
       <img 
         src={historiaImg} 
-        alt="Prefeitura e museu Mariano Procópio de Juiz de Fora" 
+        alt="Câmara e museu Mariano Procópio de Juiz de Fora" 
         style={{width: '950px', height: '550px', borderRadius: '10px', display: 'block', margin: '0 auto'}} 
       />
       <p style={{ marginBottom: '30px' }} >Imagem: Prefeitura e Museu Mariano Procópio de Juiz de Fora. Acervo pessoal </p>
