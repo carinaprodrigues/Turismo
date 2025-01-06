@@ -42,7 +42,7 @@ const CommentForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <p style={{textAlign: 'center', marginBottom: '4px'}}><strong>Deixe aqui seu comentário e sugestões</strong></p>
+        <p style={{textAlign: 'center', marginBottom: '4px'}}><strong>Deixe aqui seu comentário e sugestão</strong></p>
         <label>Nome:</label>
         <input
           type="text"
