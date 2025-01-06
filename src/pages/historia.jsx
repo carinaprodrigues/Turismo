@@ -1,10 +1,17 @@
 import React from 'react';
 import './pages.css';
+import historiaImg from './img/Historia.jpg';
 
 const Hospitais = () => {
   return (
     <div className="page-container">
       <h1>História e Origem</h1>
+      <img 
+        src={historiaImg} 
+        alt="Prefeitura e museu Mariano Procópio de Juiz de Fora" 
+        style={{width: '950px', height: '550px', borderRadius: '10px', display: 'block', margin: '0 auto'}} 
+      />
+      <p style={{ marginBottom: '30px' }} >Imagem: Prefeitura e Museu Mariano Procópio de Juiz de Fora. Acervo pessoal </p>
       <p>
       Juiz de Fora foi desmembrada de Barbacena, tornando-se município em 1850, e recebeu status de cidade em 1853. Surgiu como Santo Antônio do Paraibuna devido à expansão do Caminho Novo, uma estrada colonial para transportar ouro e evitar contrabando. O nome "Juiz de Fora" refere-se a um magistrado colonial que atuava em regiões sem juízes regulares.
       </p>

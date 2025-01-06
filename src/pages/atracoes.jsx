@@ -19,6 +19,8 @@ import independenciaImg from './img/Independencia.jpg';
 import catedralImg from './img/Catedral.jpg';
 import planetarioImg from './img/Planetario.JPG';
 import estadioImg from './img/Estadio.jpg';
+import santaImg from './img/Santa.jpg';
+import norteImg from './img/Norte.jpg';
 
 const Atracoes = () => {
   return (
@@ -293,10 +295,22 @@ const Atracoes = () => {
       <p>Comercialização de lojas, quiosques e eventos: (32) 99989-9921</p><br />
 
       <p><strong>Shopping Jardim Norte</strong></p>
+      <img 
+        src={norteImg} 
+        alt="Shopping Jardim Norte" 
+        style={{ width: '500px', height: '550px', borderRadius: '10px',  margin: '0 auto'}} 
+      />
+      <p style={{ marginBottom: '20px' }} >Imagem: Acervo pessoal </p>
       <p>Endereço: Av. Brasil, 6345 - Mariano Procópio, Juiz de Fora - MG, 36080-060</p>
       <p>Telefone: (32) 3512-2000</p><br />
 
       <p><strong>Santa Cruz Shopping</strong></p>
+      <img 
+        src={santaImg} 
+        alt="Santa Cruz Shopping" 
+        style={{ width: '500px', height: '550px', borderRadius: '10px',  margin: '0 auto'}} 
+      />
+      <p style={{ marginBottom: '20px' }} >Imagem: Acervo pessoal </p>
       <p>Endereço: R. Jarbas de Lery Santos, 1655 - Centro, Juiz de Fora - MG, 36013-150</p>
       <p>Telefone: (32) 3026-9999</p><br />
 

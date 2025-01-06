@@ -1,0 +1,60 @@
+/* Estilo para o formulário */
+form {
+    width: 100%;
+    max-width: 950px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para os rótulos */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Estilo para os campos de entrada */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    outline: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Efeito de foco nos campos de entrada */
+  form input:focus,
+  form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Estilo para o botão */
+  form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efeito hover no botão */
+  form button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -11,6 +11,7 @@ import Hospedagem from './pages/hospedagem';
 import Hospitais from './pages/hospitais';
 import Saude from './pages/saude';
 import Servicos from './pages/servicos';
+import CommentForm from "./components/Comentario/CommentForm";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/servicos" element={<Servicos />} />
         </Routes>
       </main>
+      <CommentForm />
       <Footer />
     </Router>
   );
