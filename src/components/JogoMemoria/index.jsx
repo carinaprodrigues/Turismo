@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./style.css";
 import cartaVerso from "../../pages/img/Carta.jpg";
 
@@ -61,7 +61,40 @@ const JogoMemoria = ({ onFechar }) => {
     return embaralhado.slice(0, 9);
   };
 
-  const iniciarJogo = () => {
+  // const iniciarJogo = () => {
+  //   const pontosAleatorios = selecionarPontosAleatorios();
+  //   const paresCartas = [];
+
+  //   pontosAleatorios.forEach((ponto, index) => {
+  //     paresCartas.push({
+  //       id: index * 2,
+  //       tipo: "nome",
+  //       conteudo: ponto.nome,
+  //       parId: index,
+  //       imagem: ponto.imagem,
+  //     });
+
+  //     paresCartas.push({
+  //       id: index * 2 + 1,
+  //       tipo: "imagem",
+  //       conteudo: ponto.imagem,
+  //       parId: index,
+  //       nome: ponto.nome,
+  //     });
+  //   });
+
+  //   const cartasEmbaralhadas = [...paresCartas]
+  //     .sort(() => Math.random() - 0.5)
+  //     .map((carta, index) => ({ ...carta, posicao: index }));
+
+  //   setCartas(cartasEmbaralhadas);
+  //   setViradas([]);
+  //   setEncontrados([]);
+  //   setBloqueado(false);
+  //   setTentativas(0);
+  //   setMostrarMensagem(false);
+  // };
+  const iniciarJogo = useCallback(() => {
     const pontosAleatorios = selecionarPontosAleatorios();
     const paresCartas = [];
 
@@ -93,7 +126,7 @@ const JogoMemoria = ({ onFechar }) => {
     setBloqueado(false);
     setTentativas(0);
     setMostrarMensagem(false);
-  };
+  }, []);
 
   const virarCarta = (id) => {
     if (bloqueado || viradas.includes(id) || encontrados.includes(id)) return;
@@ -125,9 +158,12 @@ const JogoMemoria = ({ onFechar }) => {
     }
   };
 
+  // useEffect(() => {
+  //   iniciarJogo();
+  // }, []);
   useEffect(() => {
     iniciarJogo();
-  }, []);
+  }, [iniciarJogo]);
 
   useEffect(() => {
     if (encontrados.length === 18 && cartas.length > 0) {
