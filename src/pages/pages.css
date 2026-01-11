@@ -1,52 +1,52 @@
 .page-container {
-    padding: 20px;
-    margin: 80px auto 10px; /* Margem superior para não sobrepor o header */
-    max-width: 1200px; /* Centraliza e limita a largura */
-    background-color: #ffffff; /* Cor de fundo clara */
-    border-radius: 8px; /* Bordas arredondadas */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Sombra leve */
-  }
-  
-  h1 {
-    margin-top: 20px;
-    font-size: 2rem;
-    color: #1A202C; /* Cor principal */
-    margin-bottom: 50px;
-    text-align: center; /* Centraliza o título */
+  padding: 20px;
+  margin: 80px auto 10px; /* Margem superior para não sobrepor o header */
+  max-width: 1200px; /* Centraliza e limita a largura */
+  background-color: #ffffff; /* Cor de fundo clara */
+  border-radius: 8px; /* Bordas arredondadas */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Sombra leve */
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #1a202c; /* Cor principal */
+  margin-bottom: 50px;
+  text-align: center; /* Centraliza o título */
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #1a202c; /* Cor principal */
+  margin-bottom: 16px;
+  text-align: center; /* Centraliza o título */
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .page-container {
+    margin: 60px 10px 20px; /* Ajusta margens em dispositivos menores */
+    padding: 10px;
   }
 
-  h2 {
-    margin-top: 20px;
+  h1 {
     font-size: 1.5rem;
-    color: #1A202C; /* Cor principal */
-    margin-bottom: 16px;
-    text-align: center; /* Centraliza o título */
   }
-  
+
   p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-    text-align: justify;
+    font-size: 0.9rem;
   }
-  
-  /* Estilo responsivo */
-  @media (max-width: 768px) {
-    .page-container {
-      margin: 60px 10px 20px; /* Ajusta margens em dispositivos menores */
-      padding: 10px;
-    }
-  
-    h1 {
-      font-size: 1.5rem;
-    }
-  
-    p {
-      font-size: 0.9rem;
-    }
-  }
-  
-  /* Estilo da lista */
+}
+
+/* Estilo da lista */
 ul {
   list-style-type: disc; /* Definindo bolinhas como marcadores */
   padding-left: 40px; /* Aumentando o espaço à esquerda das bolinhas */
@@ -63,4 +63,88 @@ li {
 
 li strong {
   font-weight: bold; /* Deixando o texto em negrito */
+}
+
+/* SEÇÃO DO JOGO DA MEMÓRIA - DESIGN CLEAN */
+.secao-jogo {
+  text-align: center;
+  margin: 60px 0;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.texto-introducao h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.texto-introducao p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* BOTÃO CLEAN */
+.botao-jogo-clean {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.15);
+}
+
+.botao-jogo-clean:hover {
+  background: #34495e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+}
+
+.botao-jogo-clean:active {
+  transform: translateY(0);
+}
+
+.icone-jogo {
+  font-size: 1.3rem;
+}
+
+.texto-jogo {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .secao-jogo {
+    margin: 40px 0;
+    padding: 30px 15px;
+  }
+
+  .texto-introducao h2 {
+    font-size: 1.6rem;
+  }
+
+  .texto-introducao p {
+    font-size: 1rem;
+  }
+
+  .botao-jogo-clean {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
 }

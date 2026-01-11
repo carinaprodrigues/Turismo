@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./CommentForm.css"; // Importa o arquivo CSS
-import { PiTextAlignCenter } from "react-icons/pi";
-import { FaAlignCenter } from "react-icons/fa";
+//import { PiTextAlignCenter } from "react-icons/pi";
+//import { FaAlignCenter } from "react-icons/fa";
 
 const CommentForm = () => {
   const [formData, setFormData] = useState({
