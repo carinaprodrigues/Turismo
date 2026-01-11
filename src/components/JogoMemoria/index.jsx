@@ -24,7 +24,6 @@ import estadioImg from "../../pages/img/Estadio.jpg";
 import santaImg from "../../pages/img/Santa.jpg";
 import norteImg from "../../pages/img/Norte.jpg";
 
-/* LISTA FIXA */
 const PONTOS = [
   { nome: "Parque Mariano Procópio", imagem: procopioImg },
   { nome: "Parque da Lajinha", imagem: lajinhaImg },
@@ -57,10 +56,14 @@ const JogoMemoria = ({ onFechar }) => {
   const [tentativas, setTentativas] = useState(0);
   const [fim, setFim] = useState(false);
 
+  /* ✅ MEMOIZADA */
+  const selecionarPontosAleatorios = useCallback(() => {
+    return [...PONTOS].sort(() => Math.random() - 0.5).slice(0, 9);
+  }, []);
+
+  /* ✅ DEPENDÊNCIA CORRETA */
   const iniciarJogo = useCallback(() => {
-    const selecionados = [...PONTOS]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 9);
+    const selecionados = selecionarPontosAleatorios();
 
     const pares = selecionados.flatMap((ponto, index) => [
       {
@@ -84,7 +87,7 @@ const JogoMemoria = ({ onFechar }) => {
     setTentativas(0);
     setFim(false);
     setBloqueado(false);
-  }, []);
+  }, [selecionarPontosAleatorios]);
 
   const virarCarta = (id) => {
     if (bloqueado || viradas.includes(id) || encontradas.includes(id)) return;
@@ -147,7 +150,6 @@ const JogoMemoria = ({ onFechar }) => {
                 className="carta-frente"
                 style={{ backgroundImage: `url(${cartaVerso})` }}
               />
-
               <div className="carta-verso">
                 {carta.tipo === "nome" ? (
                   <div className="carta-nome">
@@ -178,5 +180,3 @@ const JogoMemoria = ({ onFechar }) => {
 };
 
 export default JogoMemoria;
-
-
